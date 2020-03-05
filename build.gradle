@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.pluralsight.rxjava2'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = '12'
+targetCompatibility = '12'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+  // Logback and SLF4J dependencies
+  compile "ch.qos.logback:logback-classic:1.2.3"
+  compile "ch.qos.logback:logback-core:1.2.3"
+  compile "org.slf4j:slf4j-api:1.7.26"
+
+  // RxJava
+  compile 'io.reactivex.rxjava2:rxjava:2.2.8'
+
+  // Nitrite Embedded Document Database
+  compile 'org.dizitart:nitrite:3.2.0'
+}
